@@ -1,0 +1,190 @@
+/* Reset and global styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS Variables */
+:root {
+   --primary-color: #ff6b81;
+   --primary-color-hover: #ff4757;
+   --text-color: #ffffff;
+   --background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+   --border-color: #ddd;
+   --input-border-color: #ccc;
+}
+
+/* Background image for the entire body */
+body {
+   background-image: url('../Image/res.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+/* Container styling */
+.container {
+   width: 30%;
+   margin: 0 auto;
+   padding: 1%;
+}
+
+/* Layout & Grid */
+.food-search {
+   color: white;
+   padding: 20px;
+   background-color: var(--background-color);
+}
+
+/* Image styling */
+.img-responsive {
+   width: 80%;
+   height: auto;
+}
+
+.img-curve {
+   border-radius: 15px;
+}
+
+/* Text alignment */
+.text-center {
+   text-align: center;
+}
+
+.text-white {
+   color: #ffffff;
+}
+
+/* Clearfix for floats */
+.clearfix::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Anchor (link) styling */
+a {
+   color: var(--primary-color);
+   text-decoration: none;
+}
+
+a:hover {
+   color: var(--primary-color-hover);
+}
+
+/* Button styling */
+.btn {
+   padding: 10px 20px;
+   border: none;
+   font-size: 1rem;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.btn-primary {
+   background-color: var(--primary-color);
+   color: #ffffff;
+}
+
+.btn-primary:hover {
+   background-color: var(--primary-color-hover);
+}
+
+/* Headings styling */
+h2 {
+   color: var(--text-color);
+   font-size: 2rem;
+   margin-bottom: 20px;
+   color: white;
+}
+
+h3 {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+   color: var(--text-color);
+   color: white;
+}
+
+/* Fieldset and legend styling */
+fieldset {
+   border: 1px solid var(--border-color);
+   margin: 20px 0;
+   padding: 20px;
+   border-radius: 5px;
+}
+
+legend {
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: var(--text-color);
+   margin-bottom: 10px;
+}
+
+/* Form input and textarea styling */
+.input-responsive {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid var(--input-border-color);
+   border-radius: 5px;
+   font-size: 1rem;
+}
+
+textarea.input-responsive {
+   resize: vertical;
+}
+
+/* Social icons styling */
+.social ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+.social ul li {
+   display: inline-block;
+   margin: 0 10px;
+}
+
+.social ul li a {
+   display: block;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border-radius: 50%;
+   background-color: var(--primary-color);
+   color: #ffffff;
+}
+
+/* Footer styling */
+.footer {
+   background-color: var(--text-color);
+   color: #ffffff;
+   padding: 10px 0;
+   text-align: center;
+}
+
+.footer a {
+   color: #ffffff;
+}
+
+.footer a:hover {
+   color: var(--primary-color);
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 768px) {
+   .container {
+       width: 60%;
+   }
+
+   .btn {
+       width: 100%;
+   }
+
+   .food-search {
+       padding: 10% 0;
+   }
+}

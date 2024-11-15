@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Staff | Attendance Dashboard</title>
+  <link rel="stylesheet" href="styleadd.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Add New Staff Member</h2>
+    <form action="adddsta.php" method="POST">
+      <label for="staff_name">Staff Name:</label>
+      <input type="text" id="staff_name" name="staff_name" required />
+
+      <label for="staff_position">Staff Position:</label>
+      <select id="staff_position" name="staff_position" required>
+        <option value="" disabled selected>Select a position</option>
+        <option value="Cashier">Cashier</option>
+        <option value="Waiter">Waiter</option>
+        <option value="Chef">Chef</option>
+      </select>
+
+      <label>Gender:</label>
+      <label for="gender_male">
+        <input type="radio" id="gender_male" name="gender" value="Male" required /> Male
+      </label>
+      <label for="gender_female">
+        <input type="radio" id="gender_female" name="gender" value="Female" /> Female
+      </label>
+
+      <label for="staff_address">Address:</label>
+      <textarea id="staff_address" name="staff_address" rows="4" required></textarea>
+      <button type="submit">Add Staff</button>
+    </form>
+  </div>
+</body>
+</html>
